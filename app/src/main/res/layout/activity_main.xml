@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="730dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/mainMenuExit"
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="4dp"
+            android:onClick="onClickExitApp"
+            android:text="Exit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/investmentsButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/mainMenuSettings"
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="4dp"
+            android:text="Settings"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mainMenuExit"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bankButton"
+            app:layout_constraintVertical_bias="0.013" />
+
+        <Button
+            android:id="@+id/budgetButton"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:onClick="onClickBudget"
+            android:text="Budget"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.897"
+            app:layout_constraintStart_toEndOf="@+id/expensesButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/investmentsButton"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:onClick="onClickInvestments"
+            android:text="Investments"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/budgetButton" />
+
+        <Button
+            android:id="@+id/bankButton"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="4dp"
+            android:onClick="onClickBank"
+            android:text="Bank"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expensesButton" />
+
+        <Button
+            android:id="@+id/expensesButton"
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:layout_marginStart="4dp"
+            android:onClick="onClickExpenses"
+
+            android:text="Expenses"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
